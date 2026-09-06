@@ -7,5 +7,20 @@
   "instagram": "https://instagram.com/yourhandle",
   "email": "you@example.com",
   "hero": "",
-  "gallery": []
+  "gallery": [
+    "images/gallery-1788728119052-0.jpg",
+    "images/gallery-1788728120802-1.jpg",
+    "images/gallery-1788728122633-2.jpg",
+    "images/gallery-1788728124503-3.jpg",
+    "images/gallery-1788728126717-4.jpg",
+    "images/gallery-1788728128187-5.jpg",
+    "images/gallery-1788728129995-6.jpg",
+    "images/gallery-1788728132467-7.jpg",
+    "images/gallery-1788728134315-8.jpg",
+    "images/gallery-1788728136255-9.jpg",
+    "images/gallery-1788728138153-10.jpg",
+    "images/gallery-1788728139851-11.jpg",
+    "images/gallery-1788728141627-12.jpg",
+    "images/gallery-1788728144084-13.jpg"
+  ]
 }
