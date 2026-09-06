@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessica — Model &amp; Creative Freelancer</title>
+<meta name="description" content="Portfolio of Jessica — model and creative freelancer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts" id="hearts" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a class="wordmark" href="#top" id="wordmark">Jessica</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" id="siteNav">
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="nav-cta">Book Now</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-photo photo" id="heroPhoto">
+      <img id="heroImg" src="" alt="" style="display:none;">
+      <div class="placeholder"><span>&#10084;</span><em>Add your photo from the admin panel</em></div>
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow-plain" id="tagline">Model &amp; Creative Freelancer</p>
+      <h1 class="display-name" id="heroName">Jessica</h1>
+      <a href="#contact" class="btn-book">Book Now</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-head">
+      <h2>Gallery</h2>
+      <p>Click a photo to view it larger.</p>
+    </div>
+    <div class="gallery" id="galleryGrid">
+      <p class="gallery-empty" id="galleryEmpty">No photos yet — add some from the admin panel.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="book-section" id="contact">
+    <h2>Let's work together</h2>
+    <p>For bookings and collaborations, reach out directly.</p>
+    <p class="big-phone" id="bigPhone">+880 1XXX-XXXXXX</p>
+    <div class="book-actions">
+      <a class="btn-book large" id="whatsappLink" href="#" target="_blank" rel="noopener">Book on WhatsApp</a>
+      <a class="btn-link" id="instagramLink" href="#" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn-link" id="emailLink" href="#">Email</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>&copy; <span id="year"></span> <span id="footerName">Jessica</span></span>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

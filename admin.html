@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin — Jessica's Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="admin-header">
+  <h1>Site Admin</h1>
+  <a href="index.html" class="view-site">View live site &rarr;</a>
+</header>
+
+<main class="admin-wrap">
+
+  <section class="card">
+    <h2>1. One-time setup</h2>
+    <p class="hint">এই তথ্যগুলো শুধু আপনার এই ব্রাউজারে সেভ থাকবে। README.txt এ টোকেন বানানোর ধাপ দেওয়া আছে।</p>
+    <div class="grid2">
+      <label>GitHub username
+        <input id="ghOwner" type="text" placeholder="e.g. basakhira">
+      </label>
+      <label>Repository name
+        <input id="ghRepo" type="text" placeholder="e.g. 8624595736">
+      </label>
+      <label>Branch
+        <input id="ghBranch" type="text" value="main">
+      </label>
+      <label>Personal Access Token
+        <input id="ghToken" type="password" placeholder="ghp_...">
+      </label>
+    </div>
+    <button class="btn" id="saveSettings">Save setup</button>
+  </section>
+
+  <section class="card">
+    <h2>2. Site text</h2>
+    <div class="grid2">
+      <label>Name
+        <input id="fName" type="text" placeholder="Jessica">
+      </label>
+      <label>Tagline
+        <input id="fTagline" type="text" placeholder="Model & Creative Freelancer">
+      </label>
+      <label>Phone number (shown big)
+        <input id="fPhone" type="text" placeholder="+880 1XXX-XXXXXX">
+      </label>
+      <label>WhatsApp link
+        <input id="fWhatsapp" type="text" placeholder="https://wa.me/8801XXXXXXXXX">
+      </label>
+      <label>Instagram link
+        <input id="fInstagram" type="text" placeholder="https://instagram.com/yourhandle">
+      </label>
+      <label>Email
+        <input id="fEmail" type="text" placeholder="you@example.com">
+      </label>
+    </div>
+    <button class="btn" id="saveText">Save text</button>
+  </section>
+
+  <section class="card">
+    <h2>3. Main photo</h2>
+    <p class="hint">এইটা হোমপেজের বড় ছবি হিসেবে দেখাবে।</p>
+    <input id="heroFile" type="file" accept="image/*">
+    <button class="btn" id="uploadHero">Upload main photo</button>
+  </section>
+
+  <section class="card">
+    <h2>4. Gallery photos</h2>
+    <p class="hint">একসাথে একাধিক ছবি সিলেক্ট করতে পারবেন।</p>
+    <input id="galleryFiles" type="file" accept="image/*" multiple>
+    <button class="btn" id="uploadGallery">Add to gallery</button>
+    <div id="galleryList" class="gallery-list"></div>
+  </section>
+
+  <section class="card">
+    <h2>Status</h2>
+    <div id="log" class="log">Ready.</div>
+  </section>
+
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
