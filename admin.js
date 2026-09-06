@@ -134,6 +134,7 @@ async function loadContent(){
     document.getElementById('fName').value = currentData.name || '';
     document.getElementById('fTagline').value = currentData.tagline || '';
     document.getElementById('fPhone').value = currentData.phone || '';
+    document.getElementById('fBookLink').value = currentData.bookLink || '';
     document.getElementById('fWhatsapp').value = currentData.whatsapp || '';
     document.getElementById('fInstagram').value = currentData.instagram || '';
     document.getElementById('fEmail').value = currentData.email || '';
@@ -180,6 +181,7 @@ document.getElementById('saveText').addEventListener('click', async () => {
     currentData.name = document.getElementById('fName').value.trim();
     currentData.tagline = document.getElementById('fTagline').value.trim();
     currentData.phone = document.getElementById('fPhone').value.trim();
+    currentData.bookLink = document.getElementById('fBookLink').value.trim();
     currentData.whatsapp = document.getElementById('fWhatsapp').value.trim();
     currentData.instagram = document.getElementById('fInstagram').value.trim();
     currentData.email = document.getElementById('fEmail').value.trim();

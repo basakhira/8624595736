@@ -59,9 +59,28 @@ function renderContent(data){
   }
 
   if (data.phone) document.getElementById('bigPhone').textContent = data.phone;
-  if (data.whatsapp) document.getElementById('whatsappLink').href = data.whatsapp;
-  if (data.instagram) document.getElementById('instagramLink').href = data.instagram;
-  if (data.email) document.getElementById('emailLink').href = 'mailto:' + data.email;
+
+  // Book Now buttons (nav, hero, contact) all point to the custom link once set.
+  // Until it's set, they just scroll down to the contact section.
+  if (data.bookLink){
+    ['navBookBtn','heroBookBtn','mainBookBtn'].forEach(id => {
+      const el = document.getElementById(id);
+      el.href = data.bookLink;
+      el.target = '_blank';
+      el.rel = 'noopener';
+    });
+  } else {
+    const mainBtn = document.getElementById('mainBookBtn');
+    mainBtn.href = data.whatsapp || '#';
+    if (data.whatsapp){ mainBtn.target = '_blank'; mainBtn.rel = 'noopener'; }
+  }
+
+  const waLink = document.getElementById('whatsappLink');
+  const igLink = document.getElementById('instagramLink');
+  const emailLink = document.getElementById('emailLink');
+  if (data.whatsapp) waLink.href = data.whatsapp; else waLink.style.display = 'none';
+  if (data.instagram) igLink.href = data.instagram; else igLink.style.display = 'none';
+  if (data.email){ emailLink.href = 'mailto:' + data.email; } else { emailLink.style.display = 'none'; }
 
   const grid = document.getElementById('galleryGrid');
   const emptyMsg = document.getElementById('galleryEmpty');
