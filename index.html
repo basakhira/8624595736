@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Model &amp; Creative Freelancer</title>
+<meta name="description" content="Portfolio of Your Name — model and creative freelancer. Selected work, gallery and booking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================================================
+  EDIT ME FIRST:
+  1. Replace "YOUR NAME" everywhere with your real name.
+  2. Replace the tagline / bio text with your own words.
+  3. Put your photos inside the /images folder with the exact
+     file names already referenced below (hero.jpg, about.jpg,
+     gallery-1.jpg ... gallery-8.jpg). Until you add them, a
+     placeholder tile shows automatically — nothing breaks.
+  4. Find every <a class="btn-book"> and change href="#book"
+     is fine to keep (it scrolls to the contact block), but
+     inside the contact block, change the WHATSAPP / INSTAGRAM /
+     EMAIL links to your real ones. Look for "EDIT:" comments.
+========================================================== -->
+
+<div class="grain"></div>
+
+<header class="site-header" id="top">
+  <a class="wordmark" href="#top">YOUR NAME</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" id="siteNav">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#book" class="nav-cta">Book Now</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow-plain">Model &amp; Creative Freelancer</p>
+      <h1 class="display-name">Your<br>Name</h1>
+      <p class="hero-tagline">Editorial, commercial and lifestyle work — based in Dhaka, available worldwide.</p>
+      <a href="#book" class="btn-book">Book Now</a>
+    </div>
+    <div class="hero-photo photo" data-fallback-label="Your best photo here">
+      <img src="images/hero.jpg" alt="Your Name — portrait" onerror="this.parentElement.classList.add('has-error')">
+      <div class="placeholder"><span>+</span><em>images/hero.jpg</em></div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK / GALLERY -->
+  <section class="gallery-section" id="work">
+    <div class="section-head">
+      <h2>Selected Work</h2>
+      <p>A running collection — click any frame to view it larger.</p>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <!-- Each tile: swap the src filename photo, or delete a tile you don't need -->
+      <figure class="photo tile tall" data-fallback-label="images/gallery-1.jpg">
+        <img src="images/gallery-1.jpg" alt="" onerror="this.parentElement.classList.add('has-error')">
+        <div class="placeholder"><span>+</span><em>images/gallery-1.jpg</em></div>
+      </figure>
+      <figure class="photo tile wide" data-fallback-label="images/gallery-2.jpg">
+        <img src="images/gallery-2.jpg" alt="" onerror="this.parentElement.classList.add('has-error')">
+        <div class="placeholder"><span>+</span><em>images/gallery-2.jpg</em></div>
+      </figure>
+      <figure class="photo tile" data-fallback-label="images/gallery-3.jpg">
+        <img src="images/gallery-3.jpg" alt="" onerror="this.parentElement.classList.add('has-error')">
+        <div class="placeholder"><span>+</span><em>images/gallery-3.jpg</em></div>
+      </figure>
+      <figure class="photo tile" data-fallback-label="images/gallery-4.jpg">
+        <img src="images/gallery-4.jpg" alt="" onerror="this.parentElement.classList.add('has-error')">
+        <div class="placeholder"><span>+</span><em>images/gallery-4.jpg</em></div>
+      </figure>
+      <figure class="photo tile tall" data-fallback-label="images/gallery-5.jpg">
+        <img src="images/gallery-5.jpg" alt="" onerror="this.parentElement.classList.add('has-error')">
+        <div class="placeholder"><span>+</span><em>images/gallery-5.jpg</em></div>
+      </figure>
+      <figure class="photo tile" data-fallback-label="images/gallery-6.jpg">
+        <img src="images/gallery-6.jpg" alt="" onerror="this.parentElement.classList.add('has-error')">
+        <div class="placeholder"><span>+</span><em>images/gallery-6.jpg</em></div>
+      </figure>
+      <figure class="photo tile wide" data-fallback-label="images/gallery-7.jpg">
+        <img src="images/gallery-7.jpg" alt="" onerror="this.parentElement.classList.add('has-error')">
+        <div class="placeholder"><span>+</span><em>images/gallery-7.jpg</em></div>
+      </figure>
+      <figure class="photo tile" data-fallback-label="images/gallery-8.jpg">
+        <img src="images/gallery-8.jpg" alt="" onerror="this.parentElement.classList.add('has-error')">
+        <div class="placeholder"><span>+</span><em>images/gallery-8.jpg</em></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="about-photo photo" data-fallback-label="images/about.jpg">
+      <img src="images/about.jpg" alt="Your Name" onerror="this.parentElement.classList.add('has-error')">
+      <div class="placeholder"><span>+</span><em>images/about.jpg</em></div>
+    </div>
+    <div class="about-text">
+      <p class="eyebrow-plain">About</p>
+      <h2>A short line about who you are and the kind of work you love shooting.</h2>
+      <p class="about-body">Replace this paragraph with two or three sentences about your experience, the brands or photographers you've worked with, and what makes you the right fit for a client's project. Keep it in your own voice — plain and specific beats a long list of adjectives.</p>
+      <ul class="stat-row">
+        <li><strong>5'8"</strong><span>Height</span></li>
+        <li><strong>34-24-35</strong><span>Measurements</span></li>
+        <li><strong>Dhaka</strong><span>Based in</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BOOK / CONTACT -->
+  <section class="book-section" id="book">
+    <h2>Let's work together</h2>
+    <p>For bookings, collaborations or rate cards — reach out directly.</p>
+    <div class="book-actions">
+      <!-- EDIT: replace the # in each href below with your real link -->
+      <a class="btn-book large" href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener">Book on WhatsApp</a>
+      <a class="btn-link" href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn-link" href="mailto:you@example.com">Email</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>© <span id="year"></span> Your Name</span>
+  <span class="footer-note">Made with a lot of coffee.</span>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
