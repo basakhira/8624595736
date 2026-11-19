@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin — Jessica's Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="admin-header">
+  <h1>Site Admin</h1>
+  <div class="admin-actions">
+    <span class="who" id="whoAmI" hidden></span>
+    <button class="btn-ghost" id="logoutBtn" hidden>Log out</button>
+    <a href="index.html" class="view-site">View live site &rarr;</a>
+  </div>
+</header>
+
+<main class="admin-wrap">
+
+  <!-- LOGIN -->
+  <section class="card" id="loginCard">
+    <h2>Login</h2>
+    <p class="hint">আপনার ইমেইল ও পাসওয়ার্ড দিয়ে ঢুকুন।</p>
+    <form id="loginForm" class="login-form">
+      <label>Email
+        <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="username" required>
+      </label>
+      <label>Password
+        <input id="loginPassword" type="password" placeholder="••••••••" autocomplete="current-password" required>
+      </label>
+      <div><button class="btn" id="loginBtn" type="submit">Log in</button></div>
+    </form>
+    <p class="err" id="loginErr"></p>
+  </section>
+
+  <!-- ADMIN PANEL (login korar por dekha jabe) -->
+  <div id="panel" class="panel" hidden>
+
+    <section class="card">
+      <h2>1. Site text</h2>
+      <div class="grid2">
+        <label>Name
+          <input id="fName" type="text" placeholder="Jessica">
+        </label>
+        <label>Tagline
+          <input id="fTagline" type="text" placeholder="Model & Creative Freelancer">
+        </label>
+        <label>Phone number (shown big)
+          <input id="fPhone" type="text" placeholder="+880 1XXX-XXXXXX">
+        </label>
+        <label class="full">Book Now link (any website, form, or page — this is what the big "Book Now" button opens)
+          <input id="fBookLink" type="text" placeholder="https://your-other-site.com/booking">
+        </label>
+        <label>WhatsApp link (optional, shown separately)
+          <input id="fWhatsapp" type="text" placeholder="https://wa.me/8801XXXXXXXXX">
+        </label>
+        <label>Instagram link
+          <input id="fInstagram" type="text" placeholder="https://instagram.com/yourhandle">
+        </label>
+        <label>Email
+          <input id="fEmail" type="text" placeholder="you@example.com">
+        </label>
+      </div>
+      <button class="btn" id="saveText">Save text</button>
+    </section>
+
+    <section class="card">
+      <h2>2. Main photo</h2>
+      <p class="hint">এইটা হোমপেজের বড় ছবি হিসেবে দেখাবে।</p>
+      <img id="heroPreview" class="hero-preview" alt="Current main photo" hidden>
+      <input id="heroFile" type="file" accept="image/*">
+      <button class="btn" id="uploadHero">Upload main photo</button>
+    </section>
+
+    <section class="card">
+      <h2>3. Gallery photos</h2>
+      <p class="hint">একসাথে একাধিক ছবি সিলেক্ট করতে পারবেন। ছবির উপরের × চাপলে ছবি মুছে যাবে।</p>
+      <input id="galleryFiles" type="file" accept="image/*" multiple>
+      <button class="btn" id="uploadGallery">Add to gallery</button>
+      <div id="galleryList" class="gallery-list"></div>
+    </section>
+
+  </div>
+
+  <section class="card">
+    <h2>Status</h2>
+    <div id="log" class="log">Ready.</div>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
